@@ -1,26 +1,107 @@
-<html>
-  
+<!doctype html>
+<html lang="en">
   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        
-      <!-- Your CSS files -->
-      <link rel="stylesheet" href="style/app.css">
-      
-      <!-- google fonts: Roboto Condensed(super-font) and Lora(sub-font) -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet"> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Your CSS files -->
+    <link rel="stylesheet" href="style/app.css">
     
-    <title>Renata Daou - GitHub</title>
-  </head>
-  
-  <body>
-    <h1 class="title is-2">Renata Carlos Daou</h1>
-    <h2 class="subtitle">Welcome to my portfolio! Here you're going to find my most recent data-based projects. For complete descriptions of projects please go to my GitHub page https://github.com/renatadaou</h2>
-    <p class="byline"> This is a webstie created by Renata Daou to showcase my journalism and data experience </p>
-    <button>resume</button>
+    <!-- google fonts: Roboto Condensed(super-font) and Lora(sub-font) -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #ffebee; /* Light pink background color */
+            color: #333; /* Text color */
+        }
+
+        .container {
+            background-color: #fff; /* White background for main container */
+            border-radius: 10px; /* Rounded corners for main container */
+            padding: 20px; /* Add padding to main container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for main container */
+            margin-top: 20px; /* Add space at the top */
+        }
+
+        /* Add any additional custom styles as needed */
+    </style>
+
+    <title>Renata Carlos Daou - Github</title>
+</head>
+    
+  <body class="light-theme">
+    <div class="container"><!-- start of the main container-->
+        <div class="row justify-content-center"><!-- headline and intro -->
+            <div class="col-md-10 ">
+                <h1 class="headline super-font">Renata Carlos Daou</h1>
+                <!-- put your twitter page here: -->
+                <a class="handle super-font" href="https://twitter.com/renatadaou">@renatadaou</a>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!-- this is the subhead for the stories -->
+            <div class="col-md-10">
+                <p class="section super-font">About me</p>
+                <p class="body-text sub-font">
+                  I am a journalist currently pursuing a Master of Science degree in data journalism at the Columbia Graduate School of Journalism.
+                </p>
+                <p class="body-text sub-font">
+                  I love Children’s movies for language learning, exploring dishes (pigeon, sardine eyes, and others), travel (20+ countries!)
+                </p>
+            </div>
+        </div>
+    </div><!-- container-->
+        
+        
+<div class="container"> 
+    
+        <div class="row justify-content-center"> <!-- this is the subhead for the stories -->
+            <div class="col-md-11">
+                <p class="section super-font">Data Stories</p>
+            </div>
+        </div>
+    
+        <a class="link" href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/" class="teaser-anchor">
+            <div class="row justify-content-center "> 
+                <div class="col-md-6"><!-- image -->
+                    <img class="image " src="Pics/taylor.png" alt="The Swifties Soundtrack! Today's Most-Played Taylor Songs" width="200" height="200" >
+                </div>
+                <div class="col-md-5 "><!-- headline/description -->
+                    <p class="subhead super-font">Taylor Swift's Daily Top 10 Most Played Songs!!</p>
+                    <p class="body-text sub-font">It is an auto-updating website of the ten most listened Taylor Swift songs of the day. This fun project involved scraping data from Spotify, saving it to a CSV, and automating the process for the website </p>
+                </div>
+            </div>
+    </a>
+<!-- end of story with an image -->
+
+
+<!-- start of story with an image -->
+        <!-- put the link here -->
+        <a class="link" href="https://vpenney.github.io/police-discipline/" class="teaser-anchor">
+            <div class="row justify-content-center "> 
+                <div class="col-md-6"><!-- image -->
+                    <img class="image " src="style/images/police-department-area-charts.png" alt="Area charts comparing officer discipline in the New York Police Department vs. the Chicago Police Department.">
+                </div>
+                <div class="col-md-5 "><!-- headline/description -->
+                    <p class="subhead super-font">How do New York City and Chicago discipline their delinquent police officers?</p>
+                    <p class="body-text sub-font">The New York City Police Department and the Chicago Police department, two of the largest police departments in the country, differ drastically in their approach toward officer discipline. They also differ in their policies regarding publicly-available information.</p>
+                </div>
+            </div>
+    </a>
+<!-- end of story with an image -->
+
+
+</div><!-- end of container with stories-->
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
