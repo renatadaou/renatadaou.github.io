@@ -46,28 +46,35 @@
   .sub-font {text-align: justify;
 
   }
+  img {
+    max-width: 100%;
+  }
 
   .col-md-5 {
     margin-left: -200px; /* Reduce the left margin of the div */
 }
-img {
-  max-width: 100%;
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
 }
+
     </style>
 
     <title>Renata Carlos Daou - Github</title>
 </head>
     
-<body class="light-theme">
-  <div class="container">
+  <body class="light-theme">
+    <div class="page-container">
+    <div class="container">
       <div class="row justify-content-center">
           <div class="col-md-10">
               <h1 class="headline super-font">Renata Carlos Daou</h1>
+              <!-- put your twitter page here: -->
               <a class="handle super-font mb-4" href="https://github.com/renatadaou">@renatadaou</a>
           </div>
       </div>
-
-      <div class="row justify-content-center mt-4">
+  
+      <div class="row justify-content-center mt-4"> 
           <div class="col-md-10">
               <p class="section super-font bolding">About me</p>
               <p class="body-text sub-font">
@@ -79,43 +86,48 @@ img {
           </div>
       </div>
   </div>
+        
+<div class="container"> 
+    
+        <div class="row"> 
+            <div class="col-md-6">
+                <p class="section super-font bolding">Coding projects</p>
+            </div>
+        </div>
+    
 
-  <div class="container">
-      <div class="row justify-content-center mt-4">
-          <div class="col-md-10">
-              <p class="section super-font bolding">Coding projects</p>
-          </div>
+  <div class="row justify-content-center mb-4"> 
+      <div class="col-md-4">
+          <img class="image" src="Pics/taylor.png" alt="The Swifties Soundtrack! Today's Most-Played Taylor Songs" >
       </div>
-
-      <div class="row justify-content-center mb-4">
-          <div class="col-md-6">
-              <img class="image" src="Pics/taylor.png" alt="The Swifties Soundtrack! Today's Most-Played Taylor Songs" width="300" height="300">
-          </div>
-          <div class="col-md-5">
-              <a class="link" href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/" class="teaser-anchor">
-                  <p class="subhead super-font">Taylor Swift's Daily Top 10 Most Played Songs!!</p>
-              </a>
-              <p class="body-text sub-font">It is an auto-updating website of the ten most listened Taylor Swift songs of the day. This fun project involved scraping data from Spotify, saving it to a CSV, and automating the process for the website </p>
-          </div>
-      </div>
-
-      <div class="row justify-content-center">
-          <div class="col-md-6">
-              <img class="image" src="Pics/BBCsquare.png" alt="BBC 21st Century's greatest films - MAP" width="300" height="300">
-          </div>
-          <div class="col-md-5">
-              <a class="link" href="https://renatadaou.github.io/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office/" class="teaser-anchor">
-                  <p class="subhead super-font">BBC 21st Century's greatest films - Worldwide Box Office</p>
-              </a>
-              <p class="body-text sub-font">For this project, I utilized Beautiful Soup and regular expressions for extracting pertinent information from the webpage and creating a searchable database. A well-designed database schema facilitated this organization. I also generated a map using Mapbox to visually represent the dataset, emphasizing the countries of origin of the critics.</p>
-          </div>
+      <div class="col-md-8">
+        <a class="link" href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/" class="teaser-anchor">
+          <p class="subhead super-font">Taylor Swift's Daily Top 10 Most Played Songs!!</p>
+        </a>
+          <p class="body-text sub-font">It is an auto-updating website of the ten most listened Taylor Swift songs of the day. This fun project involved scraping data from Spotify, saving it to a CSV, and automating the process for the website </p>
       </div>
   </div>
 
+  <div class="row justify-content-center"> 
+      <div class="col-md-4">
+          <img class="image" src="Pics/BBCsquare.png" alt="BBC 21st Century's greatest films - MAP" >
+      </div>
+      <div class="col-md-8">
+        <a class="link" href="https://renatadaou.github.io/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office/" class="teaser-anchor">
+          <p class="subhead super-font">BBC 21st Century's greatest films - Worldwide Box Office</p>
+        </a>
+          <p class="body-text sub-font">For this project, I utilized Beautiful Soup and regular expressions for extracting pertinent information from the webpage and creating a searchable database. A well-designed database schema facilitated this organization. I also generated a map using Mapbox to visually represent the dataset, emphasizing the countries of origin of the critics.</p>
+      </div>
+  </div>
+</a>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</div>
+      
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </div>
 </body>
-
 </html>
