@@ -38,9 +38,10 @@
     .mt-4 {
         margin-top: 20px; /* Adjust the margin value based on your preference */
     }
-    .teaser-anchor {
+    .body-text-sub-font {
       color: #333; /* Replace with the color you want */
       text-decoration: none; /* Remove underline if desired */
+      text-align: justify;
   }
 
   .sub-font {text-align: justify;
@@ -80,37 +81,34 @@
 
   <div class="container">
       <div class="row justify-content-center mt-4 mb-4">
-          <div class="col-md-10">
+          <div class="col-md-11">
               <p class="section super-font bolding">Coding projects</p>
           </div>
       </div>
 
-      <div class="row justify-content-center mb-4">
-        <div class="col-4">
-
-          <img class="image" src="Pics/taylor.png" alt="The Swifties Soundtrack! Today's Most-Played Taylor Songs" width="300" height="300">
+      <a class="link" href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/" class="teaser-anchor">
+        <div class="row justify-content-center mb-4"> 
+            <div class="col-md-6"><!-- image -->
+                <img class="image " src="Pics/taylor.png" alt="The Swifties Soundtrack! Today's Most-Played Taylor Songs" width="300" height="300">
+            </div>
+            <div class="col-md-5 "><!-- headline/description -->
+                <p class="subhead super-font">Taylor Swift's Daily Top 10 Most Played Songs!!</p>
+                <p class="body-text-sub-font">It is an auto-updating website of the ten most listened Taylor Swift songs of the day. This fun project involved scraping data from Spotify, saving it to a CSV, and automating the process for the website </p>
+            </div>
         </div>
-        <div class="col-4">
-
-          <a class="link" href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/" class="teaser-anchor">
-            <p class="subhead super-font">Taylor Swift's Daily Top 10 Most Played Songs!!</p>
-        </a>
-        <p class="body-text sub-font">It is an auto-updating website of the ten most listened Taylor Swift songs of the day. This fun project involved scraping data from Spotify, saving it to a CSV, and automating the process for the website </p>
+</a>
+      
+<a class="link" href="https://renatadaou.github.io/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office/" class="teaser-anchor">
+    <div class="row justify-content-center "> 
+        <div class="col-md-6"><!-- image -->
+            <img class="image " src="Pics/BBCsquare.png" alt="BBC 21st Century's greatest films - MA" width="300" height="300">
         </div>
-      </div>
-
-      <div class="row justify-content-center">
-          <div class="col-4">
-              <img class="image" src="Pics/BBCsquare.png" alt="BBC 21st Century's greatest films - MAP" width="300" height="300">
-          </div>
-          <div class="col-4">
-              <a class="link" href="https://renatadaou.github.io/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office/" class="teaser-anchor">
-                  <p class="subhead super-font">BBC 21st Century's greatest films - Worldwide Box Office</p>
-              </a>
-              <p class="body-text sub-font">For this project, I utilized Beautiful Soup and regular expressions for extracting pertinent information from the webpage and creating a searchable database. A well-designed database schema facilitated this organization. I also generated a map using Mapbox to visually represent the dataset, emphasizing the countries of origin of the critics.</p>
-          </div>
-      </div>
-  </div>
+        <div class="col-md-5 "><!-- headline/description -->
+            <p class="subhead super-font">BBC 21st Century's greatest films - Worldwide Box Office</p>
+            <p class="body-text-sub-font">For this project, I utilized Beautiful Soup and regular expressions for extracting pertinent information from the webpage and creating a searchable database. A well-designed database schema facilitated this organization. I also generated a map using Mapbox to visually represent the dataset, emphasizing the countries of origin of the critics.</p>
+        </div>
+    </div>
+</a>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
