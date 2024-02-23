@@ -43,8 +43,17 @@
         .subhead, .super-font {
             font-weight: bold;
         }
+        img.img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 767.98px) {
+            img.img-fluid {
+                max-width: 75%; /* Adjust based on preference */
+                margin: 0 auto; /* Center the image */
+            }
+        }
     </style>
-
 </head>
 <body class="light-theme">
     <div class="container">
@@ -66,29 +75,29 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Project Section -->
     <div class="container">
         <div class="row justify-content-center mt-4">
-            <div class="col-md-10">
+            <div class="col-12 col-md-10">
                 <h2 class="section super-font bolding">Coding projects</h2>
             </div>
         </div>
-        <!-- Each project entry is structured similarly -->
-        <a href="https://renatadaou.github.io/soulcycle-vs-cyclebar/" class="teaser-anchor">
-            <div class="row justify-content-center mb-4"> 
-                <div class="col-md-6">
-                    <img src="Pics/spin.png" alt="SoulCycle vs CycleBar" width="300" height="300">
-                </div>
-                <div class="col-md-5">
-                    <p class="subhead super-font">Taylor Swift Helps Me Burn More Calories. Here's Proof.</p>
-                    <p class="body-text-sub-font">In this project, I decided to compare CycleBar and SoulCycle, the two spin classes that I have taken while living in New York. I found, by comparing the stats that I imported from my personal Apple Watch, that my performance was overall better at CycleBar.</p>
-                    <a target="_blank" href="https://github.com/renatadaou/soulcycle-vs-cyclebar" button
-                        class="button is-info">See code</a>
-                </div>
-                
+        <!-- Adjusting image size and ensuring links are visible -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="Pics/spin.png" alt="SoulCycle vs CycleBar" class="img-fluid">
             </div>
-        </a>
+            <div class="col-12 col-sm-6 col-md-6">
+                <h3 class="subhead super-font">Taylor Swift Helps Me Burn More Calories. Here's Proof.</h3>
+                <p class="body-text-sub-font">In this project, I decided to compare CycleBar and SoulCycle...</p>
+                <a href="https://renatadaou.github.io/soulcycle-vs-cyclebar/" class="btn btn-primary mb-2">Read more</a>
+                <a href="https://github.com/renatadaou/soulcycle-vs-cyclebar" class="btn btn-info">See code</a>
+            </div>
+        </div>
+        <!-- Add other projects in a similar structure -->
+    </div>
+    
         
         <a class="link" href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/" class="teaser-anchor">
             <div class="row justify-content-center mb-4"> 
@@ -139,3 +148,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
+
