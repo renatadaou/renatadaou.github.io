@@ -1,187 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Renata Carlos Daou - Github</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
-    <meta property="og:title" content="Renata Carlos Daou - Github">
-    <meta property="og:description" content="I am a journalist currently pursuing a Master of Science degree in data journalism at the Columbia Graduate School of Journalism.">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="https://www.instagram.com/p/CbNSq4sLAWd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@renatadaou">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Renata Carlos Daou</title>
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:300,400,700&amp;display=swap" rel="stylesheet"/>
+<!-- Bootstrap CSS -->
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" rel="stylesheet"/>
+<style>
         body {
-            background-color: #ffebee;
-            color: #333;
+            background-color: #FCE4EC; /* Light pink background */
+            color: #212529; /* Dark text for contrast */
+            font-family: 'Roboto Condensed', sans-serif; /* Primary Font */
         }
-        .container {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+        .navbar {
+            padding: 0.5rem 1rem;
+            background-color: #ffffff;
+            border-bottom: 2px solid #C2185B; /* Bright pink border */
         }
-        .bolding {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
+        .navbar a {
+            color: #C2185B;
+            margin-right: 15px;
         }
-        .mb-4, .mt-4 {
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
-        .body-text, .body-text-sub-font {
-            color: #333;
+        .navbar a:hover {
+            color: #D81B60;
             text-decoration: none;
-            text-align: justify;
         }
-        .subhead, .super-font {
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .header h1 {
+            font-weight: 700; /* Playfair Display for headers */
+            font-family: 'Playfair Display', serif;
+            color: #C2185B;
+        }
+        .header p {
+            font-style: italic;
+            color: #333;
+        }
+        .about, .cards, .interactive, .project-entry {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-img, .interactive img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .card-body {
+            padding: 1rem;
+            background-color: #ffffff;
+            border-radius: 0 0 8px 8px;
+        }
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            color: #C2185B;
             font-weight: bold;
+        }
+        .card-text {
+            color: #666;
+        }
+        a {
+            color: #C2185B; /* Bright pink for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #D81B60; /* Brighter pink for hover state */
+        }
+        .button.is-info {
+            background-color: #C2185B; /* Bright pink button */
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .button.is-info:hover {
+            background-color: #AD1457;
         }
     </style>
-
 </head>
-<body class="light-theme">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-                <h1 class="headline super-font">Renata Carlos Daou</h1>
-                <a href="https://github.com/renatadaou" class="handle super-font mb-4">@renatadaou</a>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-10">
-                <h2 class="section super-font bolding">About me</h2>
-                <p class="body-text sub-font">
-                    I am a journalist currently pursuing a Master of Science degree in data journalism at the Columbia Graduate School of Journalism. Here in this website, you will find my most recent data stories and projects. Please check my Github link for details on the background of each project. Suggestions and tips are always appreciated.
+<body>
+<div class="navbar">
+<a href="mailto:rc3599@columbia.edu">Email</a>
+<a href="https://github.com/renatadaou">Github</a>
+<a href="https://www.linkedin.com/in/renata-carlos-daou/">LinkedIn</a>
+</div>
+<div class="container">
+<div class="header">
+<img alt="Renata Carlos Daou" class="rounded-circle" src="Pics/me.png" style="width: 150px;"/>
+<h1>Renata Carlos Daou</h1>
+<p>Data Journalist and Polyglot</p>
+</div>
+<div class="about">
+<h2>About Me</h2>
+<p class="body-text sub-font">
+            I am a journalist currently pursuing a Master of Science degree in data journalism at the Columbia Graduate School of Journalism. On this website, you will discover a collection of my most recent data stories and projects. Feel free to explore my Github for more details on each project. Your suggestions and tips are always welcome!
+        </p>
+<p class="body-text sub-font">
+            My hobbies include watching children’s movies, learning new languages, exploring exotic dishes, and traveling extensively—I’ve visited over 20 countries!
+        </p>
+</div>
+</div>
+<div class="container">
+    <div class="header">
+<div class="row justify-content-center mt-4">
+<div class="col-md-10">
+<h2 class="section super-font">Coding Projects</h2>
+<p class="body-text sub-font">
+                    Below are some of my recent projects. Each one includes a brief description and a link to see the code on Github.
                 </p>
-                <p class="body-text sub-font">
-                    I love watching children’s movies while learning new languages, exploring dishes (pigeon, sardine eyes, and others), and traveling (20+ countries!)
-                </p>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
+<!-- Each project entry is structured similarly -->
+<div class="project-entry">
+<div class="row justify-content-center mb-4">
+<div class="col-md-6">
+    <a href="https://renatadaou.github.io/journalists-covering-Gaza/">
+<img alt="Journalists Covering Gaza" height="300" src="Pics/pali.png" width="300"/></a>
+</div>
+<div class="col-md-5">
+<p class="subhead super-font"> <a href="https://renatadaou.github.io/journalists-covering-Gaza/">How Are Journalists Covering Stories in Gaza? </a></p>
+<p class="body-text-sub-font">Since October 7, the conflicts in the Gaza Strip have consistently made headlines. Journalists have employed various methods to report on the conflict, including on-the-ground coverage, exploration of related themes, and utilization of open-source intelligence techniques. In this project, I used CSS and HTML to create a scrollytelling interactive story. I interviewed three journalists, Haley Willis, a reporter for The New York Times, and Adam Rayes and Briana Rice, journalists for Michigan Public Radio, about their techniques covering the conflict, without being on the ground.</p>
+<a button="" class="button is-info" href="https://github.com/renatadaou/journalists-covering-Gaza" target="_blank">See code</a>
+</div>
+</div>
+</div>
 
-    <!-- Project Section -->
-    <div class="container">
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-10">
-                <h2 class="section super-font bolding">Coding projects</h2>
-            </div>
-        </div>
-        <!-- Each project entry is structured similarly -->
-        <a href="https://renatadaou.github.io/journalists-covering-Gaza/" class="teaser-anchor">
-            <div class="row justify-content-center mb-4"> 
-                <div class="col-md-6">
-                    <img src="Pics/pali.jpeg" alt="Journalists Covering Gaza" width="300" height="300">
-                </div>
-                <div class="col-md-5">
-                    <p class="subhead super-font">How Are Journalists Covering Stories in Gaza?
-                    </p>
-                    <p class="body-text-sub-font">Since October 7, the conflicts in the Gaza Strip have consistently made headlines. Journalists have employed various methods to report on the conflict, including on-the-ground coverage, exploration of related themes, and utilization of open-source intelligence techniques. In this project, I used CSS and HTML to create a scrollytelling interactive story. I interviewed three journalists, Haley Willis, a reporter for The New York Times, and Adam Rayes and Briana Rice, journalists for Michigan Public Radio, about their techniques covering the conflict, without being on the ground.</p>
-                    <a target="_blank" href="https://github.com/renatadaou/journalists-covering-Gaza" button
-                        class="button is-info">See code</a>
-                </div>
-                
-            </div>
-        </a>
+<div class="project-entry">
+<div class="row justify-content-center mb-4">
+<div class="col-md-6">
+    <a href="https://renatadaou.github.io/travel/">
+<img alt="women travel" height="300" src="Pics/lorena.png" width="300"/>
+    </a>
+</div>
+<div class="col-md-5">
+<p class="subhead super-font">   <a href="https://renatadaou.github.io/travel/">✈️ I Asked Four Young Women What Their Favorite Countries Are. Here’s What They Said.</a></p>
+<p class="body-text-sub-font">For this feature, I had a blast chatting with four awesome women between 21 to 25 years old who've bravely taken on solo travel around the globe. They shared their insights on their favorite trips around the world. For the adventure junkies, stick until the end. I used scrolly telling techniques to make this a very engaging story, and easy to read.</p>
+<a button="" class="button is-info" href="https://github.com/renatadaou/travel" target="_blank">See code</a>
+</div>
+</div>
+</div>
+<div class="project-entry">
+<div class="row justify-content-center mb-4">
+<div class="col-md-6">
+    <a href="https://renatadaou.github.io/soulcycle-vs-cyclebar/">
+<img alt="SoulCycle vs CycleBar" height="300" src="Pics/spin.png" width="300"/>
+    </a>
+</div>
+<div class="col-md-5">
+<p class="subhead super-font"> <a href="https://renatadaou.github.io/soulcycle-vs-cyclebar/""> Taylor Swift Helps Me Burn More Calories. Here's Proof </a> </p>
+<p class="body-text-sub-font">In this project, I decided to compare CycleBar and SoulCycle, the two spin classes that I have taken while living in New York. I found, by comparing the stats that I imported from my personal Apple Watch, that my performance was overall better at CycleBar.</p>
+<a button="" class="button is-info" href="https://github.com/renatadaou/soulcycle-vs-cyclebar" target="_blank">See code</a>
+</div>
+</div>
+</div>
+<div class="project-entry">
+<div class="row justify-content-center mb-4">
+<div class="col-md-6"><!-- image -->
+    <a href="https://renatadaou.github.io/migration/">
+<img alt="Syrian immigration" class="image" height="300" src="Pics/coverpic1.png" width="300"/>
+</a>
+</div>
+<div class="col-md-5"><!-- headline/description -->
+<p class="subhead super-font"><a href="https://renatadaou.github.io/migration/">Ripple Effect of the Syrian Refugee Crisis </a></p>
+<p class="body-text-sub-font">The criminalization of humanitarian work has increased since the peak of migration out of Syria in 2016. The actions taken by EU member states have left asylum-seeking immigrants isolated and devoid of assistance upon their arrival in Europe, following arduous and dangerous journey. This project involved mapping the countries with most immigrants from Syria after scrapping data from UNHCR.</p>
+<a button="" class="button is-info" href="https://github.com/renatadaou/migration" target="_blank">See code</a>
+</div>
+</div>
+</div>
+<div class="project-entry">
+<div class="row justify-content-center mb-4">
+<div class="col-md-6"><!-- image -->
 
-        <a href="https://renatadaou.github.io/travel/" class="teaser-anchor">
-            <div class="row justify-content-center mb-4"> 
-                <div class="col-md-6">
-                    <img src="Pics/lorena.png" alt="women travel" width="300" height="300">
-                </div>
-                <div class="col-md-5">
-                    <p class="subhead super-font">✈️ I Asked Four Young Women What Their Favorite Countries Are. Here’s What They Said.
-                    </p>
-                    <p class="body-text-sub-font">For this feature, I had a blast chatting with four awesome women between 21 to 25 years old who've bravely taken on solo travel around the globe. They shared their insights on their favorite trips around the world. For the adventure junkies, stick until the end. I used scrolly telling techniques to make this a very engaging story, and easy to read.</p>
-                    <a target="_blank" href="https://github.com/renatadaou/travel" button
-                        class="button is-info">See code</a>
-                </div>
-                
-            </div>
-        </a>
-
-        <a href="https://renatadaou.github.io/soulcycle-vs-cyclebar/" class="teaser-anchor">
-            <div class="row justify-content-center mb-4"> 
-                <div class="col-md-6">
-                    <img src="Pics/spin.png" alt="SoulCycle vs CycleBar" width="300" height="300">
-                </div>
-                <div class="col-md-5">
-                    <p class="subhead super-font">Taylor Swift Helps Me Burn More Calories. Here's Proof.</p>
-                    <p class="body-text-sub-font">In this project, I decided to compare CycleBar and SoulCycle, the two spin classes that I have taken while living in New York. I found, by comparing the stats that I imported from my personal Apple Watch, that my performance was overall better at CycleBar.</p>
-                    <a target="_blank" href="https://github.com/renatadaou/soulcycle-vs-cyclebar" button
-                        class="button is-info">See code</a>
-                </div>
-                
-            </div>
-        </a>
-
-        <a class="link" href="https://renatadaou.github.io/migration/" class="teaser-anchor">
-            <div class="row justify-content-center mb-4"> 
-                <div class="col-md-6"><!-- image -->
-                    <img class="image " src="Pics/coverpic1.png" alt="Syrian immigration" width="300" height="300">
-                </div>
-                <div class="col-md-5 "><!-- headline/description -->
-                    <p class="subhead super-font">Ripple Effect of the Syrian Refugee Crisis</p>
-                    <p class="body-text-sub-font">The criminalization of humanitarian work has increased since the peak of migration out of Syria in 2016. The actions taken by EU member states have left asylum-seeking immigrants isolated and devoid of assistance upon their arrival in Europe, following arduous and dangerous journey. This project involved mapping the countries with most immigrants from Syria after scrapping data from UNHCR.</p>
-                    <a target="_blank" href="https://github.com/renatadaou/migration" button
-                        class="button is-info">See code</a>
-                </div>
-            </div>
-    </a>
-        
-        <a class="link" href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/" class="teaser-anchor">
-            <div class="row justify-content-center mb-4"> 
-                <div class="col-md-6"><!-- image -->
-                    <img class="image " src="Pics/taylor.png" alt="The Swifties Soundtrack! Today's Most-Played Taylor Songs" width="300" height="300">
-                </div>
-                <div class="col-md-5 "><!-- headline/description -->
-                    <p class="subhead super-font">Taylor Swift's Daily Top 10 Most Played Songs!!</p>
-                    <p class="body-text-sub-font">It is an auto-updating website of the ten most listened Taylor Swift songs of the day. This fun project involved scraping data from Spotify, saving it to a CSV, and automating the process for the website </p>
-                    <a target="_blank" href="https://github.com/renatadaou/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs" button
-                        class="button is-info">See code</a>
-                </div>
-            </div>
-    </a>
-          
-    <a class="link" href="https://renatadaou.github.io/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office/" class="teaser-anchor">
-        <div class="row justify-content-center mb-4 "> 
-            <div class="col-md-6"><!-- image -->
-                <img class="image " src="Pics/BBCsquare.png" alt="BBC 21st Century's greatest films - MA" width="300" height="300">
-            </div>
-            <div class="col-md-5 "><!-- headline/description -->
-                <p class="subhead super-font">BBC 21st Century's greatest films - Worldwide Box Office</p>
-                <p class="body-text-sub-font">For this project, I utilized Beautiful Soup and regular expressions for extracting pertinent information from the webpage and creating a searchable database. A well-designed database schema facilitated this organization. I also generated a map using Mapbox to visually represent the dataset, emphasizing the countries of origin of the critics.</p>
-                <a target="_blank" href="https://github.com/renatadaou/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office" button
-                        class="button is-info">See code</a>
-            </div>
-        </div>
-    </a>
-    
-    <a class="link" href="https://renatadaou.github.io/wildfires-in-amazonas-2023/" class="teaser-anchor">
-        <div class="row justify-content-center mb-4 "> 
-            <div class="col-md-6"><!-- image -->
-                <img class="image " src="Pics/fires.png" alt="forest fires story" width="300" height="300">
-            </div>
-            <div class="col-md-5 "><!-- headline/description -->
-                <p class="subhead super-font">Forest Fires in Amazonas</p>
-                <p class="body-text-sub-font">This story contains some data analysis of the forest fires in the state of Amazonas from the years 2019 and 2023. And some thoughts on what the people from the area think about it. I have used the Terrabrasilis API to get the data needed to the construct the graphics on DataWrapper.</p>
-                <a target="_blank" href="https://github.com/renatadaou/wildfires-in-amazonas-2023" button
-                        class="button is-info">See code</a>
-            </div>
-        </div>
-    </a>
-    
-    </div>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-</body>
-</html>
+    <a href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/">
+<img alt="The Swifties Soundtrack! Today's Most-Played Taylor Songs" class="image" height="300" src="Pics/taylor.png" width="300"/>
+</a>
+</div>
+<div class="col-md-5"><!-- headline/description -->
+<p class="subhead super-font"> <a href="https://renatadaou.github.io/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs/">Taylor Swift's Daily Top 10 Most Played Songs!!</a></p>
+<p class="body-text-sub-font">It is an auto-updating website of the ten most listened Taylor Swift songs of the day. This fun project involved scraping data from Spotify, saving it to a CSV, and automating the process for the website</p>
+<a button="" class="button is-info" href="https://github.com/renatadaou/Taylor-Swift-s-Daily-Top-10-Most-Played-Songs" target="_blank">See code</a>
+</div>
+</div>
+</div>
+<div class="project-entry">
+<div class="row justify-content-center mb-4">
+<div class="col-md-6"><!-- image -->
+    <a href="https://renatadaou.github.io/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office/">
+<img alt="BBC 21st Century's greatest films - Worldwide Box Office" class="image" height="300" src="Pics/BBCsquare.png" width="300"/></a>
+</div>
+<div class="col-md-5"><!-- headline/description -->
+<p class="subhead super-font">  <a href="https://renatadaou.github.io/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office/"> BBC 21st Century's greatest films - Worldwide Box Office</a></p>
+<p class="body-text-sub-font">For this project, I utilized Beautiful Soup and regular expressions for extracting pertinent information from the webpage and creating a searchable database. A well-designed database schema facilitated this organization. I also generated a map using Mapbox to visually represent the dataset, emphasizing the countries of origin of the critics.</p>
+<a button="" class="button is-info" href="https://github.com/renatadaou/-BBC-21st-Century-s-greatest-films---Worldwide-Box-Office" target="_blank">See code</a>
+</div>
+</div>
+</div>
+<div class="project-entry">
+<div class="row justify-content-center mb-4">
+<div class="col-md-6"><!-- image -->
+    <a href="https://renatadaou.github.io/wildfires-in-amazonas-2023/">
+<img alt="Forest Fires in Amazonas" class="image" height="300" src="Pics/fires.png" width="300"/></a>
+</div>
+<div class="col-md-5"><!-- headline/description -->
+<p class="subhead super-font"> <a href="https://renatadaou.github.io/wildfires-in-amazonas-2023/">Forest Fires in Amazonas</a></p>
+<p class="body-text-sub-font">This story contains some data analysis of the forest fires in the state of Amazonas from the years 2019 and 2023. And some thoughts on what the people from the area think about it. I have used the Terrabrasilis API to get the data needed to the construct the graphics on DataWrapper.</p>
+<a button="" class="button is-info" href="https://github.com/renatadaou/wildfires-in-amazonas-2023" target="_blank">See code</a>
+</div>
+</div>
+</div>
+</div></body></html>
