@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Renata Carlos Daou</title>
+    <meta name="description" content="Portfolio of Renata Carlos Daou, data journalist: published stories and coding projects."/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        :root {
+            --beige: #F4EEE6;        /* page background */
+            --cream: #FFFDF9;        /* cards & navbar */
+            --pink: #F6D6DE;         /* baby pink */
+            --pink-deep: #A65D72;    /* dusty rose for titles */
+            --blue: #D3E5F3;         /* baby blue */
+            --blue-deep: #3F6585;    /* readable blue for links */
+            --text: #3B3530;
+            --muted: #7A7068;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--beige);
+            color: var(--text);
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 1.05rem;
+        }
+        .navbar {
+            padding: 0.6rem 1rem;
+            background-color: var(--cream);
+            border-bottom: 3px solid var(--blue);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .navbar a { color: var(--blue-deep); margin-right: 15px; font-weight: bold; }
+        .navbar a:hover { color: var(--pink-deep); text-decoration: none; }
+        .navbar .spacer { flex: 1; }
+        .header { text-align: center; padding: 2rem 0; }
+        .header img { border: 5px solid var(--pink); box-shadow: 0 0 0 5px var(--blue); }
+        .header h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--pink-deep);
+            font-weight: 700;
+        }
+        .header h1 { margin-top: 1.25rem; }
+        .header p { font-style: italic; color: var(--muted); }
+        section { scroll-margin-top: 60px; }
+        a { color: var(--blue-deep); text-decoration: none; }
+        a:hover { text-decoration: underline; color: var(--pink-deep); }
+
+        /* Published work cards */
+        .outlet {
+            padding: 2rem;
+            background-color: var(--cream);
+            margin: 1rem 0;
+            border-radius: 10px;
+            border-top: 6px solid var(--blue);
+            box-shadow: 0 4px 18px rgba(90, 70, 50, 0.08);
+            height: calc(100% - 2rem);
+            display: flex;
+            flex-direction: column;
+        }
+        .row > div:nth-child(even) .outlet { border-top-color: var(--pink); }
+        .outlet h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--blue-deep);
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .outlet .role { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.6rem; }
+        .outlet ul { padding-left: 1.1rem; margin-bottom: 1rem; }
+        .outlet li { margin-bottom: 0.5rem; line-height: 1.35; }
+        .outlet li::marker { color: #E3A3B3; }
+        .outlet .lang {
+            font-size: 0.75rem; font-weight: 700; color: var(--blue-deep);
+            background: var(--blue); border-radius: 4px; padding: 1px 6px; margin-left: 4px;
+            white-space: nowrap;
+        }
+        .outlet .more { margin-top: auto; font-weight: 700; color: var(--pink-deep); }
+        .featured li { font-size: 1.1rem; }
+        .chips { margin-bottom: 0.75rem; }
+        .chips a {
+            display: inline-block; background: var(--blue); border-radius: 999px;
+            padding: 6px 16px; margin: 0 8px 8px 0; font-weight: 700; color: var(--blue-deep);
+        }
+        .chips a:hover { background: var(--pink); color: var(--pink-deep); text-decoration: none; }
+        footer { text-align: center; color: var(--muted); padding: 2rem 0 3rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#work">Published Work</a>
+        <a href="#social">Social</a>
+        <span class="spacer"></span>
+        <a href="mailto:rc3599@columbia.edu">Email</a>
+        <a href="https://www.linkedin.com/in/renata-carlos-daou/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="profilepic.png" alt="Renata Carlos Daou" class="rounded-circle" style="width: 150px;"/>
+            <h1>Renata Carlos Daou</h1>
+            <p>Data Journalist and Polyglot</p>
+        </div>
+
+        <!-- ================= PUBLISHED WORK ================= -->
+        <section id="work">
+            <div class="header">
+                <h2>Published Work</h2>
+                <p>A selection of my reporting, grouped by publication.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="outlet featured">
+                        <h3>Bloomberg News</h3>
+                        <ul>
+                            <li><a href="https://www.bloomberg.com/news/articles/2025-10-23/why-us-coffee-prices-will-remain-high-even-if-trump-lifts-tariffs" target="_blank" rel="noopener">Expect to Keep Paying Record Prices for Coffee. This Is Why</a></li>
+                            <li><a href="https://www.bloomberg.com/news/articles/2025-10-10/us-geothermal-lease-prices-soar-by-280-under-trump" target="_blank" rel="noopener">Companies Are Paying Record Sums to Develop Geothermal Energy</a></li>
+                            <li><a href="https://www.bloomberg.com/news/articles/2025-11-29/brazil-is-switching-up-its-coffee-beans-here-s-what-that-means-for-you" target="_blank" rel="noopener">Why the World's Top Coffee Producer Is Switching Up Its Beans</a></li>
+                            <li><a href="https://www.bloomberg.com/news/articles/2025-11-22/these-brazil-forests-are-better-equipped-for-a-hotter-world" target="_blank" rel="noopener">How a Seed Mix Can Help Save Native Forests</a></li>
+                            <li><a href="https://www.bloomberg.com/news/articles/2025-10-30/the-rich-generate-most-of-their-carbon-footprint-by-owning-assets" target="_blank" rel="noopener">How the Rich Are Fueling Emissions Even as They Cut Them At Home</a></li>
+                            <li><a href="https://www.bloomberg.com/news/articles/2025-11-20/how-gavin-newsom-s-climate-claims-match-up-against-california-s-record" target="_blank" rel="noopener">What California's Record Shows About Newsom's Claims to Climate Leadership</a></li>
+                            <li><a href="https://www.bloomberg.com/news/articles/2025-09-17/most-corporate-climate-transition-plans-aren-t-credible-study-finds" target="_blank" rel="noopener">Most Corporate Climate Transition Plans Aren't Credible, Study Finds</a></li>
+                            <li><a href="https://www.bloomberg.com/news/articles/2025-11-20/colombia-en-la-cop30-debate-por-fin-de-combustibles-fosiles" target="_blank" rel="noopener">Colombia lidera la propuesta en la COP30 para dejar atrás el petróleo, el gas y el carbón</a><span class="lang">ES</span></li>
+                        </ul>
+                        <a class="more" href="https://www.bloomberg.com/authors/AXq9rsz6bBo/renata-carlos-daou" target="_blank" rel="noopener">All Bloomberg stories →</a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="outlet featured">
+                        <h3>The Connecticut Mirror</h3>
+                        <ul>
+                            <li><a href="https://ctmirror.org/2025/07/27/ct-lead-service-line-water-pipes/" target="_blank" rel="noopener">A Buried Threat</a></li>
+                            <li><a href="https://ctmirror.org/2025/06/29/ct-immigration-lawyers-court-backlogs/" target="_blank" rel="noopener">A lack of immigration lawyers in CT means big court backlogs</a></li>
+                            <li><a href="https://ctmirror.org/2024/12/15/ct-jury-selection-system-racial-disparities/" target="_blank" rel="noopener">CT overhauled its jury selection system but racial disparities remain</a></li>
+                            <li><a href="https://ctmirror.org/2025/01/24/ct-changes-10-years-10-charts/" target="_blank" rel="noopener">For a 'land of steady habits,' CT has seen changes over 10 years</a></li>
+                            <li><a href="https://ctmirror.org/2024/11/15/ct-election-results-red-shift-votes/" target="_blank" rel="noopener">Why did most CT towns shift red? Fewer votes for Democrats</a></li>
+                            <li><a href="https://ctmirror.org/2025/04/25/ct-cost-of-living-salaries/" target="_blank" rel="noopener">CT salaries are among the highest in the U.S. So is its cost of living</a></li>
+                            <li><a href="https://ctmirror.org/2025/06/06/ct-languages-english-spanish/" target="_blank" rel="noopener">What languages are spoken in CT besides English and Spanish?</a></li>
+                            <li><a href="https://ctmirror.org/2024/11/08/ct-inmigrantes-fuerza-laboral/" target="_blank" rel="noopener">El papel de los inmigrantes en la fuerza laboral de Connecticut</a><span class="lang">ES</span></li>
+                        </ul>
+                        <a class="more" href="https://ctmirror.org/author/rdaou/" target="_blank" rel="noopener">All CT Mirror stories →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="outlet">
+                        <h3>Columbia Journalism</h3>
+                        <ul>
+                            <li><a href="https://renatadaou.github.io/Amazon-forest-fires/" target="_blank" rel="noopener">The Amazon Faces a New Threat: Fire</a></li>
+                            <li><a href="https://renatadaou.github.io/travel/" target="_blank" rel="noopener">I Asked Four Young Women What Their Favorite Countries Are. Here's What They Said.</a></li>
+                            <li><a href="https://coveringreligion.org/2024/05/06/northern-ireland-granted-him-asylum-now-comes-the-hard-part/" target="_blank" rel="noopener">Northern Ireland Granted Him Asylum: Now Comes the Hard Part</a></li>
+                            <li><a href="https://coveringreligion.org/2024/05/31/a-17-year-old-path-from-immigrant-youth-to-belfast-council-advocate/" target="_blank" rel="noopener">A 17-year-old Path from Immigrant Youth to Belfast Council Advocate</a></li>
+                            <li><a href="https://columbianewsservice.com/2024/05/02/heres-what-happens-if-an-international-student-gets-suspended-for-campus-protest/" target="_blank" rel="noopener">Here's What Happens if an International Student Gets Suspended for Campus Protest</a></li>
+                            <li><a href="https://coveringreligion.org/2024/03/14/northern-irelands-journey-towards-peace-and-the-bloody-sunday-legacy/" target="_blank" rel="noopener">Day Five: Northern Ireland's Journey Towards Peace and the Bloody Sunday Legacy</a></li>
+                            <li><a href="https://renatadaou.github.io/soulcycle-vs-cyclebar/" target="_blank" rel="noopener">Taylor Swift Helps Me Burn More Calories. Here's Proof.</a></li>
+                        </ul>
+                        <a class="more" href="https://renatadaou.github.io/renatadaoucolumbiauni/" target="_blank" rel="noopener">More Columbia projects →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="outlet">
+                        <h3>Malala Fund · Assembly</h3>
+                        <ul>
+                            <li><a href="https://assembly.malala.org/stories/how-roe-v-wade-affects-south-koreas-abortion-bill" target="_blank" rel="noopener">How Roe v. Wade affects South Korea's abortion bill</a></li>
+                            <li><a href="https://assembly.malala.org/stories/how-lack-of-funding-is-affecting-public-education-in-brazil" target="_blank" rel="noopener">How lack of funding is affecting public education in Brazil</a></li>
+                            <li><a href="https://assembly.malala.org/stories/how-do-titles-like-refugee-and-asylum-seeker-impact-girls-lives" target="_blank" rel="noopener">I spoke to women about how titles like "refugee" and "asylum seeker" impact their lives</a></li>
+                            <li><a href="https://assembly.malala.org/stories/are-streets-safe-for-girls" target="_blank" rel="noopener">Are streets safe for girls?</a></li>
+                        </ul>
+                        <a class="more" href="https://assembly.malala.org/stories?author=6335fee03141bd308bd16a43" target="_blank" rel="noopener">All Assembly stories →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="outlet">
+                        <h3>Onward State</h3>
+                        <ul>
+                            <li><a href="https://onwardstate.com/2021/02/26/venezuelan-student-organization-collaborates-to-help-unprivileged-children/" target="_blank" rel="noopener">Venezuelan Student Organization Collaborates To Help Unprivileged Children</a></li>
+                            <li><a href="https://onwardstate.com/2021/10/19/gender-equity-coalition-collaborates-to-fight-sexual-violence-on-campus/" target="_blank" rel="noopener">Gender Equity Coalition Collaborates To Fight Sexual Violence On Campus</a></li>
+                            <li><a href="https://onwardstate.com/2022/01/21/geosciences-professor-creates-podcast-to-educate-about-our-planet/" target="_blank" rel="noopener">Geosciences Professor Creates Podcast To Educate About Our Planet</a></li>
+                            <li><a href="https://onwardstate.com/2020/09/29/international-students-staying-active-involved-despite-pandemics-challenges/" target="_blank" rel="noopener">International Students Staying Active &amp; Involved Despite Pandemic's Challenges</a></li>
+                            <li><a href="https://onwardstate.com/2021/10/20/penn-state-senior-makes-noise-in-music-industry/" target="_blank" rel="noopener">Penn State Senior Makes Noise In Music Industry</a></li>
+                            <li><a href="https://onwardstate.com/2021/10/13/penn-state-connection-fuels-musical-collaborations-between-two-alumni/" target="_blank" rel="noopener">Penn State Connection Fuels Musical Collaborations Between Two Alumni</a></li>
+                        </ul>
+                        <a class="more" href="https://onwardstate.com/author/renatadaou" target="_blank" rel="noopener">All Onward State stories →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="outlet">
+                        <h3>Her Campus</h3>
+                        <ul>
+                            <li><a href="https://www.hercampus.com/school/psu/protests-in-cuba-explained/" target="_blank" rel="noopener">Why Are There Protests in Cuba?</a></li>
+                            <li><a href="https://www.hercampus.com/school/psu/long-distance-relationship-while-studying-abroad-lets-discuss/" target="_blank" rel="noopener">Long-Distance Relationship While Studying Abroad? Let's Discuss.</a></li>
+                            <li><a href="https://www.hercampus.com/school/psu/open-letter-my-hometown-0/" target="_blank" rel="noopener">An Open Letter to My Hometown</a></li>
+                        </ul>
+                        <a class="more" href="https://www.hercampus.com/author/renata-daou/" target="_blank" rel="noopener">All Her Campus stories →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="outlet">
+                        <h3>Freelance</h3>
+                        <ul>
+                            <li><a href="https://infoamazonia.org/2026/10/19/fogo-se-aproxima-de-manaus-em-2026-e-mma-suspeita-de-queimadas-intencionais/" target="_blank" rel="noopener">InfoAmazonia: Fogo se aproxima de Manaus em 2026 e MMA suspeita de queimadas intencionais</a><span class="lang">PT</span></li>
+                            <li><a href="https://postcardsplotwists.substack.com/" target="_blank" rel="noopener">Postcards &amp; Plot Twists, my Substack</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6" id="social">
+                    <div class="outlet">
+                        <h3>Social &amp; Video</h3>
+                        <p class="role">Follow me · @renatadaou</p>
+                        <div class="chips">
+                            <a href="https://www.instagram.com/renatadaou/" target="_blank" rel="noopener">Instagram</a>
+                            <a href="https://www.tiktok.com/@renatadaou" target="_blank" rel="noopener">TikTok</a>
+                        </div>
+                        <p class="role">Accounts I've managed</p>
+                        <div class="chips">
+                            <a href="https://www.instagram.com/pennstateglobal/" target="_blank" rel="noopener">Penn State Global</a>
+                            <a href="https://www.instagram.com/on.assembly" target="_blank" rel="noopener">Assembly (Malala Fund)</a>
+                        </div>
+                        <p class="role">In front of the camera</p>
+                        <div class="chips">
+                            <a href="https://www.tiktok.com/t/ZP8bg98dW/" target="_blank" rel="noopener">TikTok video</a>
+                            <a href="https://www.instagram.com/reel/DNyizC2QDHj/" target="_blank" rel="noopener">Instagram reel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 Renata Carlos Daou · <a href="mailto:rc3599@columbia.edu">Get in touch</a>
+        </footer>
+    </div>
+</body>
+</html>
